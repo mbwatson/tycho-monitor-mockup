@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/modal.css">
+  <link rel="stylesheet" href="./assets/css/table.css">
+  <title>Commons Share</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">App Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#createPodModal"><i class="material-icons">add</i>New Pod</a>
+              <a class="dropdown-item" href="#current-pods"><i class="material-icons">storage</i>Current Pods</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="material-icons">exit_to_app</i>Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>CommonsShare Pod Manager</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nihil laboriosam maxime itaque cum!
+          </p>
+
+          <!-- Trigger create-new-pod modal -->
+          <div class="modal-trigger-container">
+            <button type="button" id="create-new-pod-modal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#createPodModal">
+              <i class="material-icons">add</i>Create New Pod
+            </button>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum repellendus doloribus facere placeat! Minima, expedita? Officia odio facere mollitia natus sed reiciendis delectus est sapiente similique nihil voluptatem nulla dolores non at sit repudiandae atque, ab placeat, labore voluptatum ipsa ut ex. Incidunt, delectus, dolore.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="createPodModal" tabindex="-1" role="dialog" aria-labelledby="createPodModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="createPodModalLabel">Launch New Pod</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="list-group create-pod-list">
+                <a href="#" class="create-pod-list-item list-group-item list-group-item-action">
+                  <img class="create-pod-list-item__image" src="./assets/images/imagej-logo.png" alt="Imagej Logo">
+                  <div class="create-pod-list-item__details">
+                    <div class="create-pod-list-item__title">Imagej</div>
+                    <div class="create-pod-list-item__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iste, in vitae!
+                    </div>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                  </div>
+                </a>
+                <a href="#" class="create-pod-list-item list-group-item list-group-item-action">
+                  <img class="create-pod-list-item__image" src="./assets/images/jupyter-logo.png" alt="Jupyter Logo">
+                  <div class="create-pod-list-item__details">
+                    <div class="create-pod-list-item__title">Jupyter</div>
+                    <div class="create-pod-list-item__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam, ea sapiente.
+                    </div>
+                    <small>Donec id elit non mi porta.</small>
+                  </div>
+                </a>
+                <a href="#" class="create-pod-list-item list-group-item list-group-item-action">
+                  <img class="create-pod-list-item__image" src="./assets/images/monarch-initiative-logo.png" alt="Monarch-Initiative Logo">
+                  <div class="create-pod-list-item__details">
+                    <div class="create-pod-list-item__title">Monarch Initiative</div>
+                    <div class="create-pod-list-item__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sequi, magnam beatae!
+                    </div>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                  </div>
+                </a>
+                <a href="#" class="create-pod-list-item list-group-item list-group-item-action">
+                  <img class="create-pod-list-item__image" src="./assets/images/nextflow-logo.png" alt="Nextflow Logo">
+                  <div class="create-pod-list-item__details">
+                    <div class="create-pod-list-item__title">NextFlow</div>
+                    <div class="create-pod-list-item__description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum sit maiores fugit.
+                    </div>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button id="create-pod" type="button" class="btn btn-primary" disabled data-dismiss="modal"><i class="material-icons">launch</i>Create Pod</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- listen for clicks on pod creation links within modal -->
+    <script>
+      const createPodButton = document.querySelector('#create-pod')
+      const createPodLinks = document.querySelectorAll('.create-pod-list a')
+
+      const anyActivePodLinksActive = () => {
+        createPodButton.disabled = true
+        for (let i = 0; i < createPodLinks.length; i++) {
+          if (createPodLinks[i].classList.contains('active')) {
+            return true
+          }
+        }
+      }
+
+      createPodLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+          createPodLinks.forEach(a => a.classList.remove('active'))
+          link.classList.add('active')
+          createPodButton.disabled = !anyActivePodLinksActive()
+        })
+      })
+    </script>
+
+    <div class="container-fluid">
+      <div class="row">
+        <h2 id="current-pods">Current Pods</h2>
+      </div>
+      <div class="row">
+        <table class="manage-pods-table table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Location</th>
+              <th scope="col">Created</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <img class="pod-type-logo" src="./assets/images/imagej-logo.png" alt="ImageJ Logo">
+                imagej-587c1105cc6746a6a90bd9598da47c8d
+              </th>
+              <td>34.74.46.174 <br> Port: 31738</td>
+              <td>1-22-2020 22:58:39</td>
+              <td><button class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+            </tr>
+            <tr>
+              <th>
+                <img class="pod-type-logo" src="./assets/images/jupyter-logo.png" alt="Jupyter Logo">
+                jupyter-datascience-915a3942c1504b299c97255581d8c721
+              </th>
+              <td>34.73.68.2 <br> Port: 31818</td>
+              <td>1-22-2020 22:59:13</td>
+              <td><button class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+            </tr>
+            <tr>
+              <th>
+                <img class="pod-type-logo" src="./assets/images/nextflow-logo.png" alt="NextFlow Logo">
+                nextflow-a4f88e60c54941a2ad1280d95a28133e
+              </th>
+              <td>34.73.218.8 <br> Port: 30919</td>
+              <td>1-22-2020 22:40:23</td>
+              <td><button class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <h2 id="current-pods">Possible Relevant Additional Information</h2>
+      </div>
+      <div class="row">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis incidunt explicabo similique blanditiis eos nam quae neque, perferendis facere cumque accusamus in esse, nisi laborum! Voluptates, blanditiis, necessitatibus est fuga consequuntur harum veritatis quod corporis nesciunt vitae dolores quibusdam ea incidunt natus? Impedit nobis corporis dolore totam repudiandae voluptates eaque! Quaerat eveniet dignissimos aliquam beatae alias fugiat doloribus nemo cumque eligendi. Officiis, veniam beatae deserunt voluptatibus, est dolores, quod distinctio sequi odit aliquid dignissimos nemo, illo. Recusandae, minima eaque odit fugiat ea unde magnam molestias eius harum vero ab adipisci exercitationem non voluptatum tempora modi quos hic delectus. Modi quos iste aliquam, voluptatem quidem inventore aliquid, id porro earum tempore unde ea eaque provident debitis enim harum quis error quo molestiae atque quae consequuntur, a culpa omnis. Laborum officiis nostrum hic veritatis, quae! Animi asperiores, aperiam ad saepe fuga ipsam. Explicabo tempora impedit debitis odit, libero nam, suscipit eius praesentium excepturi! Facilis sed sit dolorem necessitatibus repudiandae suscipit alias porro vero harum enim ad debitis nostrum, voluptatem saepe dicta velit deserunt neque maiores explicabo omnis cupiditate numquam id iure. Recusandae cumque optio, minus iure quo, cum commodi. Enim ratione natus corrupti impedit, dolorem qui, ad nisi quasi quidem eligendi cumque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis incidunt explicabo similique blanditiis eos nam quae neque, perferendis facere cumque accusamus in esse, nisi laborum! Voluptates, blanditiis, necessitatibus est fuga consequuntur harum veritatis quod corporis nesciunt vitae dolores quibusdam ea incidunt natus? Impedit nobis corporis dolore totam repudiandae voluptates eaque! Quaerat eveniet dignissimos aliquam beatae alias fugiat doloribus nemo cumque eligendi. Officiis, veniam beatae deserunt voluptatibus, est dolores, quod distinctio sequi odit aliquid dignissimos nemo, illo. Recusandae, minima eaque odit fugiat ea unde magnam molestias eius harum vero ab adipisci exercitationem non voluptatum tempora modi quos hic delectus. Modi quos iste aliquam, voluptatem quidem inventore aliquid, id porro earum tempore unde ea eaque provident debitis enim harum quis error quo molestiae atque quae consequuntur, a culpa omnis. Laborum officiis nostrum hic veritatis, quae! Animi asperiores, aperiam ad saepe fuga ipsam. Explicabo tempora impedit debitis odit, libero nam, suscipit eius praesentium excepturi! Facilis sed sit dolorem necessitatibus repudiandae suscipit alias porro vero harum enim ad debitis nostrum, voluptatem saepe dicta velit deserunt neque maiores explicabo omnis cupiditate numquam id iure. Recusandae cumque optio, minus iure quo, cum commodi. Enim ratione natus corrupti impedit, dolorem qui, ad nisi quasi quidem eligendi cumque.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
