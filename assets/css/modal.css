@@ -1,3 +1,5 @@
+/* Trigger */
+
 .modal-trigger-container {
   display: flex;
   flex-direction: row;
@@ -6,9 +8,16 @@
   margin: 2rem 0;
 }
 
+.modal-trigger-container button#create-new-pod-modal {
+  font-weight: bold;
+}
+
 .modal-trigger-container button#create-new-pod-modal i {
   margin-right: 0.5rem;
 }
+
+/* Modal */
+
 #create-new-pod-modal {
   padding: 1rem 1.5rem;
 }
@@ -17,9 +26,11 @@
   padding: 0;
 }
 
-.create-pod-list {}
+.create-pod-list {
+}
 
 .create-pod-list-item {
+  border-radius: 0 !important; /* !important to override bootstrap default */
   padding: 1rem 0 2rem 1rem;
   display: flex;
   flex-direction: row;
@@ -35,7 +46,7 @@
   border-radius: 4px;
   border: 1px solid var(--color-silver);
   transition: filter 250ms, transform 250ms;
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 .create-pod-list-item:hover:not(.active) {
@@ -44,7 +55,7 @@
 
 .create-pod-list-item:hover img {
   filter: drop-shadow( 0 0 0.1rem rgba(0, 0, 0, 0.1));
-  transform: scale(0.99);
+  transform: scale(0.98);
 }
 
 .create-pod-list-item.active img {

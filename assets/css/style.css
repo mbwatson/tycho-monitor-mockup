@@ -1,16 +1,17 @@
  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
  :root {
-  --color-sky: #e3f2fd;
-  --color-smoke: #ddd;
   --color-silver: #e9e9ee;
-  --color-slate: #555;
+  --color-smoke: #ddd;
+  --color-slate: #334;
 }
 
 body {
   background: #007bff;
   background: linear-gradient(to bottom, #fff, var(--color-silver));
   font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--color-slate);
+  letter-spacing: 1px;
 }
 
 /* Main Content */

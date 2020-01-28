@@ -51,6 +51,16 @@ nav {
   filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.1));
 }
 
+.navbar-brand-text {
+  color: var(--color-slate);
+  font-size: 120%;
+  margin-left: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color-slate);
+}
+
 /* Dropdown Items */
 /* Vertically center icons beside menu item text*/
 .dropdown-item > i {
